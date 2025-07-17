@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Join us at American Restaurant for exciting events, including live music, wine tastings, and cooking classes. Book your spot today!">
+    <meta name="keywords"
+        content="American Restaurant, events, live music, wine tasting, cooking class, private events">
+    <meta name="author" content="Muhammad Hamza">
+    <meta property="og:title" content="Events - American Restaurant">
+    <meta property="og:description"
+        content="Discover upcoming events at American Restaurant, from jazz nights to exclusive wine tastings.">
+    <meta property="og:image" content="main-bg-2.jpg">
+    <meta property="og:url" content="https://www.americanrestaurant.com/events.html">
+    <title>Events - American Restaurant</title>
+    <link rel="stylesheet" href="resturant.css">
+    <link rel="stylesheet" href="events.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap">
+    <link rel="stylesheet" href="global.css">
+</head>
+
+<body>
+    <header>
+        <div class="logoimage">
+            <img src="logo.png" alt="American Restaurant Logo" style="max-height: 50px; margin: 0.4em 1em;">
+        </div>
+        <nav class="navigation" aria-label="Main navigation">
+            <ul class="ul navbar">
+                <li><a href="index.html" aria-current="page">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="drinks.html">Drinks</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="form.html">Parties</a></li>
+                <li><a href="form.html">Booking</a></li>
+            </ul>
+            <button class="menuicon" aria-label="Toggle mobile menu" aria-expanded="false">
+                <div class="menu"></div>
+                <div class="menu"></div>
+                <div class="menu"></div>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" aria-labelledby="hero-title">
+            <h1 id="hero-title">Experience Unforgettable Moments</h1>
+            <p>Join us for a variety of exciting events, from live music nights to special culinary experiences. There's
+                always something happening at American Restaurant!</p>
+        </section>
+        <h2 id="events-title">Upcoming Events</h2>
+        <section class="events-section" aria-labelledby="events-title">
+
+            <article class="event-card">
+                <img src="bottom-top-1.jpg" alt="Live jazz performance at American Restaurant">
+                <div class="event-card-content">
+                    <span class="event-date">August 15, 2025 | 7:00 PM - 10:00 PM</span>
+                    <h3>Jazz & Dine Evening</h3>
+                    <p>Immerse yourself in the smooth sounds of live jazz while enjoying our exquisite dinner menu. A
+                        perfect night out for music and food lovers.</p>
+                </div>
+            </article>
+
+            <article class="event-card reverse">
+                <img src="bottom-top-2.jpg" alt="Wine tasting event with curated selections">
+                <div class="event-card-content">
+                    <span class="event-date">September 5, 2025 | 6:30 PM - 8:30 PM</span>
+                    <h3>Exclusive Wine Tasting</h3>
+                    <p>Discover a curated selection of fine wines from around the world, expertly paired with small
+                        bites from our chef. Limited seats available.</p>
+                </div>
+            </article>
+
+            <article class="event-card">
+                <img src="bottom-top-3.jpg" alt="Mediterranean cooking class with our head chef">
+                <div class="event-card-content">
+                    <span class="event-date">October 10, 2025 | 11:00 AM - 2:00 PM</span>
+                    <h3>Mastering Mediterranean Cuisine</h3>
+                    <p>Join our head chef for an interactive cooking class where you'll learn to prepare authentic
+                        Mediterranean dishes. Hands-on experience and delicious results!</p>
+                </div>
+            </article>
+        </section>
+
+        <section class="gallery-section" aria-labelledby="gallery-title">
+            <h2 id="gallery-title">Past Events Gallery</h2>
+            <div class="gallery-grid">
+                <img src="bottom-1.jpg" alt="Guests enjoying a past live music event">
+                <img src="bottom-2.jpg" alt="Attendees at a previous wine tasting session">
+                <img src="bottom-3.jpg" alt="Participants in a past cooking workshop">
+                <img src="bottom-bottom-1.jpg" alt="Crowd at a past outdoor event">
+                <img src="bottom-bottom-2.jpg" alt="Decorations from a past private party">
+                <img src="bottom-bottom-3.jpg" alt="Chefs presenting dishes at a past event">
+            </div>
+        </section>
+
+        <section class="cta-section" aria-labelledby="cta-title">
+            <h2 id="cta-title">Host Your Next Unforgettable Event With Us!</h2>
+            <p>Looking for the perfect venue for your private party, corporate event, or special celebration? Our
+                versatile spaces and dedicated team are here to make your vision a reality.</p>
+            <a href="form.html" class="button" role="button">Inquire About Private Events</a>
+        </section>
+    </main>
+
+
+
+    <script>
+        document.querySelector('.menuicon').addEventListener('click', () => {
+            const nav = document.querySelector('.navbar');
+            const isExpanded = document.querySelector('.menuicon').getAttribute('aria-expanded') === 'true';
+            document.querySelector('.menuicon').setAttribute('aria-expanded', !isExpanded);
+            nav.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>

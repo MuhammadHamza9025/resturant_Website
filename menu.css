@@ -2,14 +2,14 @@
     margin: 0px;
     padding: 0px;
 box-sizing: border-box;
-font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 body {
     /* position: absolute; */
     height: 100%;
     left: 0px;
     top: 0px;
-    background: url('drinks-simple-white.jpg') no-repeat center;
+    /* background: url('drinks-simple-white.jpg') no-repeat center; */
     background-position: center;
     background-size: cover;
     box-sizing: border-box;
